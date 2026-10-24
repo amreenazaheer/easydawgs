@@ -136,13 +136,4 @@ npm run typecheck  # tsc --noEmit
 | `router.js` / `.ts`               | Deterministic profile modifiers (not wired in this iteration).     |
 | `evaluator.scaffolding.test.ts`   | Unit tests for the evaluator scaffolding.                          |
 
-## Caveats
 
-- **API key exposure.** The key is pasted into `live-llm.js` and is readable from
-  the served page by anyone who can open it. This is fine for a local demo on
-  your own machine. Do **not** deploy this file publicly or commit a real key;
-  for production, proxy the call through a small backend that holds the key.
-  Rotate the key when you are done testing.
-- **JSON repair is best-effort.** It fixes common model formatting slips but
-  cannot recover genuinely truncated output. If a response is cut off mid-object,
-  raise the evaluator's `max_tokens` in `live-llm.js`.
