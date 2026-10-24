@@ -1,0 +1,253 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "2. Implement the SYSTEM_PROMPT constant": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796377060
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796687542
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796758348
+      }
+    ],
+    "3.1 Implement the injectable seam": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796377095
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796760759
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796801814
+      }
+    ],
+    "3.2 Implement `invokeLlm` timeout wrapper": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796377116
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797209730
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797272144
+      }
+    ],
+    "4.1 Implement `assertNonEmptyEssay` and `buildMessages`": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796377140
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796809317
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796868593
+      }
+    ],
+    "5.1 Implement `parseResponse`": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796377173
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796871969
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796911207
+      }
+    ],
+    "5.3 Implement `validateLlmEvaluation` (strict, no coercion)": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796377195
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796913816
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796999120
+      }
+    ],
+    "6.1 Implement `validateSpansAndRevisions`": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796377214
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797001935
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797066106
+      }
+    ],
+    "7. Checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796377234
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797398227
+      }
+    ],
+    "8.1 Implement `scoreDimensions` and `applyProfileModifiers`": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796377256
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797069950
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797141238
+      }
+    ],
+    "8.4 Implement `computeTotalScore` and `deriveBand`": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796377280
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797143855
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797196355
+      }
+    ],
+    "9.1 Implement `evaluateEssay` with the retry loop": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796377315
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797275178
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797383933
+      }
+    ],
+    "10. Final checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796377334
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797398960
+      }
+    ],
+    "1. Set up TypeScript test tooling and module scaffolding": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796389268
+      },
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796682638
+      }
+    ],
+    "4. Implement input guard and message assembly": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796868628
+      }
+    ],
+    "5. Implement response parsing and strict schema validation": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792796999156
+      }
+    ],
+    "6. Implement deterministic span and revision validation": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797066157
+      }
+    ],
+    "8. Implement deterministic scoring, modifiers, total, and band": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797196393
+      }
+    ],
+    "3. Implement the LLM seam and timeout wrapper": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797272182
+      }
+    ],
+    "9. Implement the evaluateEssay orchestrator and wire the pipeline": [
+      {
+        "executionId": "1b092439-6f05-4f7f-8f52-31e8fca696b3",
+        "chatSessionId": "sess_83ee8ca3-63b6-48e6-8cc9-3e3f8758ead8",
+        "timestamp": 1792797383966
+      }
+    ]
+  }
+}

@@ -1,0 +1,461 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create `router.js` as a 1:1 port of `router.ts`": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909614
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800916520
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801306766
+      }
+    ],
+    "2.1 Port constants, types-free structures, and error classes of `shape-classifier.js`": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909649
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800917809
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801307608
+      }
+    ],
+    "2.2 Port the deterministic parse/validate stages of `shape-classifier.js`": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909676
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801312731
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801469529
+      }
+    ],
+    "2.3 Port the LLM seam and `classifyShape` pipeline of `shape-classifier.js`": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909711
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801474238
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801667256
+      }
+    ],
+    "3.1 Port constants, `BASE_VALUES`, band structure, and error classes of `evaluator.js`": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909734
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800918705
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801308590
+      }
+    ],
+    "3.2 Port the seam, parse, and schema-validation stages of `evaluator.js`": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909757
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801313583
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801470303
+      }
+    ],
+    "3.3 Port the span/revision validation, deterministic scoring chain, and `evaluateEssay` retry loop": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909780
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801473294
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801668398
+      }
+    ],
+    "4.1 Create `mock-llm.js` with the sample essay and hardcoded responses": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909805
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801674725
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801783623
+      }
+    ],
+    "4.2 Implement the branching mock invoker": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909838
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801792758
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801909634
+      }
+    ],
+    "5. Checkpoint — dependency layer complete": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909862
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801919234
+      }
+    ],
+    "6.1 Implement the dimension label map and gauge view-model helper": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909887
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801928778
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801991517
+      }
+    ],
+    "6.2 Implement span location and union-merge computation": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909908
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801994208
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792802108095
+      }
+    ],
+    "6.3 Implement the escape + backdrop-segment builder": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909931
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792802110751
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792802192367
+      }
+    ],
+    "7.1 Implement seam injection and the input gate": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909954
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792802196065
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792802349963
+      }
+    ],
+    "7.2 Implement the pipeline orchestrator": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909977
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792802354677
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792802485204
+      }
+    ],
+    "7.3 Implement the UI state machine and error-class mapping": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800909999
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792802490041
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792802707943
+      }
+    ],
+    "8.1 Render the band and the six score gauges": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800910023
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792802711540
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792802927824
+      }
+    ],
+    "8.2 Render the UW feedback cards": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800910045
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792802930544
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792803048564
+      }
+    ],
+    "8.3 Render highlights into the backdrop overlay and wire clear-on-edit": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800910067
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792803051342
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792803283213
+      }
+    ],
+    "8.4 Render the demo indicator, prompt-selection text, and status area": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800910094
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792803286030
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792803575557
+      }
+    ],
+    "9. Checkpoint — logic and rendering complete": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800910137
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792803579091
+      }
+    ],
+    "10.1 Create `index.html`": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800910161
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792803582008
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792803653866
+      }
+    ],
+    "11.1 Create `styles.css`": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800910183
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792803656596
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792803809992
+      }
+    ],
+    "12. Final checkpoint — full demo and tests": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792800910208
+      },
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792803812752
+      }
+    ],
+    "1. Port the deterministic router module to a browser ES module": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801306817
+      }
+    ],
+    "2. Port the shape-classifier module to a browser ES module": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801667294
+      }
+    ],
+    "3. Port the evaluator module to a browser ES module": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801668430
+      }
+    ],
+    "4. Build the demo mock LLM invoker and bundled sample data": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792801909670
+      }
+    ],
+    "6. Implement the pure frontend logic in `app.js`": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792802192405
+      }
+    ],
+    "7. Implement the input gate and pipeline orchestration in `app.js`": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792802707974
+      }
+    ],
+    "8. Implement the DOM rendering in `app.js`": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792803575596
+      }
+    ],
+    "10. Build the HTML structure and wire the entry point": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792803653905
+      }
+    ],
+    "11. Build the stylesheet": [
+      {
+        "executionId": "9d57d484-c453-4a80-bcbd-07092745c8f2",
+        "chatSessionId": "sess_5b952bc8-9dc0-4bd8-a3f2-d510f28eb3f5",
+        "timestamp": 1792803810030
+      }
+    ]
+  }
+}

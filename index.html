@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EasyDawg Admissions Reviewer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top navigation bar. Active links switch the visible content section;
+         the two "Coming Soon" links are disabled to frame the broader vision. -->
+    <header class="app-header">
+      <button
+        type="button"
+        class="brand"
+        data-view-link
+        data-view="home"
+        aria-label="EasyDawg home"
+      >
+        <span class="brand-mark" aria-hidden="true">🐾</span>
+        <span class="brand-name">EasyDawg</span>
+      </button>
+
+      <nav class="main-nav" aria-label="Primary">
+        <button type="button" class="nav-link" data-view="evaluator">
+          Evaluator Engine
+        </button>
+        <button type="button" class="nav-link" data-view="about">About Us</button>
+        <button type="button" class="nav-link" data-view="resources">
+          Resources
+        </button>
+        <span class="nav-link is-disabled" aria-disabled="true" tabindex="-1">
+          Transcripts
+          <span class="nav-badge">Coming Soon</span>
+        </span>
+        <span class="nav-link is-disabled" aria-disabled="true" tabindex="-1">
+          Extracurriculars
+          <span class="nav-badge">Coming Soon</span>
+        </span>
+      </nav>
+    </header>
+
+    <!-- =====================================================================
+         VIEW: Home (editorial landing page — default)
+         ================================================================== -->
+    <main
+      id="view-home"
+      class="view home-view"
+      data-view="home"
+      aria-label="Welcome to EasyDawg"
+    >
+      <!-- Hero -->
+      <section class="hero">
+        <span class="hero-badge">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          Built specifically for the University of Washington
+        </span>
+
+        <h1 class="hero-headline">Stop guessing what UW Admissions wants.</h1>
+
+        <p class="hero-subtitle">
+          EasyDawg reads your essay, grades, and activities as a single story —
+          the same way UW's holistic reviewers do — and tells you where the
+          narrative holds together and where it falls apart.
+        </p>
+
+        <div class="hero-actions">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-view-link
+            data-view="evaluator"
+          >
+            Try the Essay Reviewer
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-view-link
+            data-view="evaluator"
+          >
+            Full App Reviewer
+          </button>
+        </div>
+      </section>
+
+      <!-- Holistic story section -->
+      <section class="story-section">
+        <div class="story-card">
+          <p class="story-eyebrow">ONE APPLICATION, ONE STORY</p>
+          <h2 class="story-headline">
+            Your essay, grades, and activities should tell the same story.
+          </h2>
+          <p class="story-body">
+            UW does not read your application in pieces. Reviewers weigh the
+            whole file together — looking for a consistent, believable throughline
+            that connects who you say you are in your essay to what your
+            transcript and activities actually show. When those three pull in
+            different directions, the story falls apart, and so does the case for
+            admission.
+          </p>
+          <p class="story-body">
+            EasyDawg evaluates each piece against that same holistic standard,
+            then shows you where your narrative is coherent and where it breaks —
+            so you can fix the gaps before a reviewer ever sees them.
+          </p>
+
+          <div class="story-pillars">
+            <div class="story-pillar">
+              <span class="story-pillar-tag">Essay</span>
+              <p>The voice and reflection that frame the whole application.</p>
+            </div>
+            <div class="story-pillar story-pillar-muted">
+              <span class="story-pillar-tag">Transcripts</span>
+              <p>The academic arc behind the story. <em>Coming soon.</em></p>
+            </div>
+            <div class="story-pillar story-pillar-muted">
+              <span class="story-pillar-tag">Activities</span>
+              <p>The contribution and impact beyond the page. <em>Coming soon.</em></p>
+            </div>
+          </div>
+
+          <div class="story-cta">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-view-link
+              data-view="evaluator"
+            >
+              Try the Essay Reviewer
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================================
+         VIEW: Evaluator Engine
+         ================================================================== -->
+    <main
+      id="view-evaluator"
+      class="view workspace"
+      data-view="evaluator"
+      aria-label="Essay evaluator"
+      hidden
+    >
+      <!-- LEFT region: prompt selection + essay editor + Evaluate action -->
+      <section class="pane pane-left" aria-label="Essay input">
+        <!-- Persistent live-mode indicator (revealed by app.js). -->
+        
+
+        <!-- Common App prompt selector (populated by app.js; display/context only) -->
+        <div class="prompt-selector">
+          <label for="prompt-select">Common App prompt</label>
+          <select id="prompt-select"></select>
+        </div>
+
+        <!-- Full text of the selected prompt (populated by app.js) -->
+        <div id="prompt-text" class="prompt-text"></div>
+
+        <!-- Essay editor with the backdrop-overlay highlight structure -->
+        <div class="essay-field">
+          <div
+            id="essay-backdrop"
+            class="essay-backdrop"
+            aria-hidden="true"
+          ></div>
+          <textarea
+            id="essay-input"
+            class="essay-input"
+            aria-label="Student essay"
+          ></textarea>
+        </div>
+
+        <!-- Evaluate action -->
+        <div class="actions">
+          <button id="evaluate-btn" type="button">Evaluate Essay</button>
+        </div>
+
+        <!-- Status/error area and in-progress indicator -->
+        <div id="status-area" class="status-area" role="status" aria-live="polite"></div>
+        <div id="loading-indicator" class="loading-indicator" hidden>Evaluating…</div>
+      </section>
+
+      <!-- RIGHT region: the Feedback Dashboard -->
+      <section class="pane pane-right" aria-label="Feedback dashboard">
+        <!-- Overall band (verbatim from the evaluation result) -->
+        <div id="band-display" class="band-display"></div>
+
+        <!-- Six score gauges (rendered by app.js in canonical order) -->
+        <div id="gauges" class="gauges"></div>
+
+        <!-- UW feedback cards (rendered by app.js) -->
+        <div id="feedback-cards" class="feedback-cards"></div>
+      </section>
+    </main>
+
+    <!-- =====================================================================
+         VIEW: About Us
+         ================================================================== -->
+    <main
+      id="view-about"
+      class="view content-view"
+      data-view="about"
+      aria-label="About EasyDawg"
+      hidden
+    >
+      <article class="content-card">
+        <h1>Democratizing holistic admissions</h1>
+        <p class="lede">
+          Selective colleges read applications holistically, weighing the story
+          behind the numbers. That kind of reading has always been a scarce
+          resource reserved for students with access to expensive counselors.
+          EasyDawg exists to change that.
+        </p>
+
+        <h2>Our mission</h2>
+        <p>
+          We give every applicant the same careful, rubric-driven read that a
+          well-resourced student takes for granted. By pairing a transparent
+          evaluation framework with a large language model, EasyDawg turns the
+          implicit judgments of a holistic review into concrete, actionable
+          feedback — the kind a student can act on before they hit submit.
+        </p>
+
+        <h2>Why holistic, and why AI</h2>
+        <p>
+          A holistic review looks past a single test score to the whole person:
+          how a student thinks, what they contribute, how they have grown. Those
+          qualities live in the essay, not the transcript. We use AI to make
+          that reading fast, consistent, and free — so the feedback loop that
+          used to cost hundreds of dollars an hour is available to anyone with a
+          draft and a question.
+        </p>
+
+        <h2>Where we are headed</h2>
+        <p>
+          The Evaluator Engine is the first piece of a larger holistic picture.
+          Transcript analysis and extracurricular review are on the roadmap, so
+          that one day a student can see their full application the way an
+          admissions officer would — all in one place, all transparent.
+        </p>
+      </article>
+    </main>
+
+    <!-- =====================================================================
+         VIEW: Resources
+         ================================================================== -->
+    <main
+      id="view-resources"
+      class="view content-view"
+      data-view="resources"
+      aria-label="Admissions resources"
+      hidden
+    >
+      <article class="content-card">
+        <h1>UW admissions guidance</h1>
+        <p class="lede">
+          EasyDawg's evaluation logic is grounded in the University of
+          Washington's published guidance on the personal statement and its
+          holistic review. The two frameworks below are the backbone of how the
+          Evaluator Engine reads an essay.
+        </p>
+
+        <h2>The Answer–Evidence–Interpretation framework</h2>
+        <p>
+          UW advises students to build every essay around three moves. A strong
+          response does all three; a weak one usually skips the third.
+        </p>
+        <ol class="aei-list">
+          <li>
+            <strong>Answer.</strong> State directly what the prompt is actually
+            asking. The reader should know, within the first lines, the specific
+            experience, belief, or moment the essay is about — no throat-clearing
+            or generic preamble.
+          </li>
+          <li>
+            <strong>Evidence.</strong> Ground the answer in concrete, specific
+            detail: the scene, the dialogue, the exact thing you did. Evidence is
+            what separates a story only you could tell from an essay a thousand
+            students could have submitted.
+          </li>
+          <li>
+            <strong>Interpretation.</strong> Explain what the evidence means —
+            how it changed your thinking, what it reveals about you, why it
+            matters. This is the reflective move that turns a recounted event
+            into insight, and it is the single biggest differentiator between an
+            average essay and a memorable one.
+          </li>
+        </ol>
+        <p class="aei-note">
+          The six scoring dimensions map onto this framework: <em>focus</em> and
+          <em>specificity</em> reward a clear answer backed by real evidence,
+          while <em>how you think</em>, <em>character</em>, and
+          <em>self-awareness</em> reward genuine interpretation.
+        </p>
+
+        <h2>Holistic review criteria</h2>
+        <p>
+          UW reads each application as a whole rather than against a single
+          cutoff. The essay is weighed against criteria like these:
+        </p>
+        <ul class="criteria-list">
+          <li>
+            <strong>Intellectual curiosity &amp; how you think.</strong> Evidence
+            of a mind that questions, reframes, and reflects — not just what you
+            concluded, but how you got there.
+          </li>
+          <li>
+            <strong>Personal character &amp; growth.</strong> Honesty,
+            resilience, and a demonstrated arc of change over time, including how
+            you responded to setbacks.
+          </li>
+          <li>
+            <strong>Contribution to community.</strong> The ways you have added
+            to the people and places around you, and the perspective you would
+            bring to campus.
+          </li>
+          <li>
+            <strong>Context.</strong> Your accomplishments are read against the
+            opportunities and obstacles you actually had, not in a vacuum.
+          </li>
+          <li>
+            <strong>Self-awareness.</strong> A clear-eyed understanding of
+            yourself — your values, your limits, and what you have learned.
+          </li>
+        </ul>
+        <p class="aei-note">
+          Holistic review means no single number decides an application. The
+          essay is your chance to supply the interpretation the rest of the file
+          cannot.
+        </p>
+      </article>
+    </main>
+
+    <!-- The App_Controller. ES modules defer by default, so wiring runs after
+         the DOM is parsed; app.js auto-runs init() on DOMContentLoaded. -->
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
